@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-#Создаём приложение
+
 app = Flask(__name__)
 
 
@@ -8,12 +8,6 @@ app = Flask(__name__)
 @app.route("/")
 def about():
     return render_template("about.html")
-
-
-#Другая страница
-@app.route("/other")
-def other():
-    return render_template("other.html")
 
 
 #Запускаем локальный сервер
